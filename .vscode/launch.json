@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BakeryApplication<bakery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mario.bakery.BakeryApplication",
+            "projectName": "bakery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
