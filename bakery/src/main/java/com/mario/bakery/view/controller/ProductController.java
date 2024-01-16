@@ -1,3 +1,26 @@
+package com.mario.bakery.view.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mario.bakery.model.Product;
+import com.mario.bakery.model.exception.ResponseException;
+import com.mario.bakery.service.ProductService;
+import com.mario.bakery.shared.ProductRecord;
+import com.mario.bakery.shared.ResponseRecord;
+
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
@@ -82,4 +105,5 @@ public class ProductController {
         product.setQuantity(obj.quantity());
         product.setPrice(obj.price());
         return product;
-    }
+    }
+}
