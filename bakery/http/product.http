@@ -1,0 +1,34 @@
+#Endpoint para cadastro de produtos
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+    "name": "Bolo de Chocolate", 
+    "quantity": 30,
+    "price": 20,
+    "description": "Bolo feito de chocolate ao leite"
+}
+
+###
+#EndPoint para mostrar todos os produtos
+GET http://localhost:8080/api/products
+
+###
+#EndPoint para mostrar produto indivudual por id
+GET http://localhost:8080/api/products/1
+
+###
+#EndPoint para atuaizar produto individual por id
+PUT http://localhost:8080/api/products/3
+Content-Type: application/json
+
+{
+    "name": "Bolo de Milho", 
+    "quantity": 12,
+    "price": 18,
+    "description": "Bolo de Milho"
+}
+
+###
+#EndPoint para deletar
+DELETE http://localhost:8080/api/products/4
