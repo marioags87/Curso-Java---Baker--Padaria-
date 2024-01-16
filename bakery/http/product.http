@@ -3,10 +3,10 @@ POST http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-    "name": "Bolo de Chocolate", 
-    "quantity": 30,
-    "price": 20,
-    "description": "Bolo feito de chocolate ao leite"
+    "name": "Bolo de Banana", 
+    "quantity": 25,
+    "price": 25,
+    "description": "Bolo feito de banana"
 }
 
 ###
